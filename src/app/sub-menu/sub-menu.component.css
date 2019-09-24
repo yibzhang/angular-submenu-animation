@@ -1,0 +1,42 @@
+li{
+  border-radius: 2px;
+  overflow: hidden;
+}
+.btn{
+  display: block;
+  padding: 16px 20px;
+  background: #3498db;
+  color: white;
+  position: relative;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.subMenu{
+  background: #12354d;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 10em;
+}
+.subMenu a{
+  display: block;
+  padding: 16px 26px;
+  color: white;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+.subMenu a:before{
+  content: "";
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  background: #3498db;
+  left:0;
+  top:0;
+  transition: 0.3s;
+  opacity:0;
+}
+.subMenu a:hover:before{
+  opacity: 1;
+}

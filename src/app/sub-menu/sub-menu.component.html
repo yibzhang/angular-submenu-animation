@@ -1,0 +1,6 @@
+<li *ngIf="menuBtnLabel">
+  <a class="btn" (click)="showSubMenu()">{{menuBtnLabel}}</a>
+  <div class="subMenu" [ngStyle]="{'max-height': maxHeight}">
+    <a *ngFor="let sub of subMenuBtnLabel">{{sub}}</a>
+  </div>
+</li>
